@@ -1,6 +1,6 @@
-from PyQt5.QtCore import QObject
-from PyQt5.QtWidgets import QFileDialog, QMessageBox
-from PyQt5.QtCore import pyqtSignal
+from PyQt6.QtCore import QObject
+from PyQt6.QtWidgets import QFileDialog, QMessageBox
+from PyQt6.QtCore import pyqtSignal
 
 import motorlib
 
@@ -157,7 +157,7 @@ class FileManager(QObject):
         msg.setWindowTitle("Close without saving?")
         msg.setStandardButtons(QMessageBox.Save | QMessageBox.Discard | QMessageBox.Cancel)
 
-        res = msg.exec_()
+        res = msg.exec()
         if res == QMessageBox.Save:
             self.save()
             return True

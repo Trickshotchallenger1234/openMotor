@@ -10,8 +10,8 @@ numpy
 Pillow
 pyparsing
 pyqt-distutils
-PyQt5
-PyQt5-sip
+PyQt6==6.4.2
+PyQt6-sip==13.4.1
 python-dateutil
 PyYAML
 scikit-fmm
